@@ -3,6 +3,7 @@ import { Switch, Route } from 'react-router-dom'
 import Post from '../components/headerComponent/Post.js';
 import SideCard from '../components/headerComponent/SideCard.js';
 import Homepage from '../components/pages/homePage.js';
+import ChatWindow from '../components/chatComponent/ChatWindow.js'
 
 import { Container} from 'reactstrap';
 
@@ -16,9 +17,10 @@ const Main = () => (
     <main className="my-5 py-5">
         <Container className="px-0">
             <Switch>
-                <Route exact path='/' component={Homepage}/>
+                <Route exact path='/' component={ChatWindow}/>
                 <Route path='/sidecard' component={SideCard}/>
                 <Route path='/post' component={Post}/>
+                <Route path='/chat' component={Homepage}/>
             </Switch>
         </Container>
     </main>
