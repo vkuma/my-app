@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from '../../logo.svg';
+import HomePage from '../pages/homePage';
 
 import {
     Container, Row, Col, Form, Input, Button, Navbar, Nav,
@@ -30,7 +31,7 @@ const Header = () => (
                             </NavItem>
 
                             <NavItem className="d-flex align-items-center">
-                                <NavLink className="font-weight-bold" href="/">Events</NavLink>
+                                <NavLink className="font-weight-bold" href="/sidecard">Events</NavLink>
                             </NavItem>
 
                             <UncontrolledDropdown className="d-flex align-items-center" nav inNavbar>
